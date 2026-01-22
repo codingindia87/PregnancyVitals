@@ -14,7 +14,7 @@ object ReminderManager {
 
         WorkManager.getInstance(context).enqueueUniquePeriodicWork(
             "VitalsReminder",
-            ExistingPeriodicWorkPolicy.REPLACE,
+            ExistingPeriodicWorkPolicy.UPDATE,
             reminderRequest
         )
     }
